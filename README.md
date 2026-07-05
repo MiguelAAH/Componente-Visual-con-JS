@@ -7,7 +7,7 @@ Un Toggle Button para poder cambiar de el color original a un modo oscuro
 * **Estudiante:** Miguel Alberto Alonso Heredia
 * **Tema:** Componente Visual Reutilizable en JavaScript
 * **Grupo:** 7SE
-
+ 
 ## ¿Qué problema resuelve?
 Las pantallas con colores muy blancos llegan a lastimar la vista, mi boton resuelve ese problema haciendo que los colores originales pasen a colores oscuros o mejor dicho negro.
 
