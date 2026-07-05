@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f8f8;
+    transition: background-color .3s ease;
+    font-family: sans-serif;
+}
+
+.mi-contenedor-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.toggle-label {
+    color: #666;
+    font-size: 14px;
+    transition: color .3s ease;
+}
+
+body.body-dark .toggle-label {
+    color: #fff;
+}
+
+.switch-bg {
+    background-color: #f8f8f8;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    box-shadow: inset 4px 4px 6px #cecece, inset -4px -4px 6px #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.circle-toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    transform: scale(.7);
+    background: linear-gradient(145deg, #d8d8d8, #FFFFFF);
+    border-radius: 25px;
+    box-shadow: 3px 3px 8px #cecece, -3px -3px 8px #fff;
+    transition: all .3s ease;
+}
+
+.switch-bg.active {
+    background-color: #212121;
+    box-shadow: inset 4px 4px 6px #141414, inset -4px -4px 6px #2e2e2e;
+}
+
+.switch-bg.active .circle-toggle {
+    left: 40px;
+    background: linear-gradient(145deg, #232323, #1e1e1e);
+    box-shadow: 3px 3px 8px #141414, -3px -3px 8px #2e2e2e;
+}

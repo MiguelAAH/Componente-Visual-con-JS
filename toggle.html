@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cafetería - Registro</title>
+    <link rel="stylesheet" href="css/toggle.css">
+    <style>
+        body {
+            background-color: #6F4E37;
+            color: #FFFFFF;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .formulario-cafe {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .formulario-cafe input {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="toggle-cafeteria"></div>
+
+    <form class="formulario-cafe">
+        <h3>Inicia sesion</h3>
+        <input type="text" placeholder="Usuario">
+        <input type="password" placeholder="Contraseña">
+        <button type="submit"
+            style="padding: 10px; background: #FFD700; border: none; cursor:pointer;">Ingresar</button>
+    </form>
+
+    <script src="js/toggle.js"></script>
+    <script>
+        const toggleCafe = new ToggleVisual('#toggle-cafeteria', {
+            texto: "Modo oscuro",
+            colorOscuro: "#1a1a1a"
+        });
+    </script>
+</body>
+
+</html>
